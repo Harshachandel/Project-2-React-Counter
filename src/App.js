@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ClassCounter from "./Layouts/ClassCounter"
+import FunCounter from "./Layouts/FunCounter"
+
+
+function App(){
+  return(
+    <>
+
+     <h4 className="text-center mt-5">Give Vote For Class or Function Counter Which is Easy to Make In React ? </h4>
+
+    <ClassCounter/>
+
+    <FunCounter/>
+    <h5 className="text-center mt-5">"Whoever gets the most votes will be the winner."</h5>
+
+    </>
+  )
 }
 
-export default App;
+export default App
+
+
